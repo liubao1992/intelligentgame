@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,272 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000a3b;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root,.App{
+  width: 100%;
+  height: 100%;
+}
+.ant-layout-header{
+  height: 64px;
+  padding: 0;
+  /* padding: 0 50px; */
+  color:#01c4f7;
+  line-height: 55px;
+  background: #000a3b;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ant-layout{
+  height: 100%;
+  background: transparent;
+}
+.SiderDiv{
+  flex: 0 0 400px !important;
+  max-width: 400px !important;
+  width: 400px !important;
+  margin-left: 10px;
+  background: transparent;
+  padding: 20px 10px;
+}
+.topBg{
+  background-image: url('../images/headerBanner.png') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.brightLine{
+  border: solid 1px #1a3f81;
+  box-shadow: #03184d;
+}
+.lineContent{
+  background-image: url('../images/lineBanner.png') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.lineContent1{
+  background-image: url('../images/lineBanner1.png') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.roomBg{
+  background-image: url('../images/room.png') ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.roomCont{
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+.room{
+  width: 278px;
+    height: 180px;
+    margin-right: 10px;
+    float: left;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+.room p{
+  color:#02d9fd;
+  height: 30px;
+  line-height: 24px;
+}
+.room .roomBody{
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.room .roomBody .teamLeft{
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  transform: skewX(-45deg);
+  background: #03A9F4;
+  margin-left: 10%;
+  vertical-align: top;
+  border: solid 1px #015bb0;
+}
+.room .roomBody .teamLeft p{
+  -webkit-transform: skewX(45deg);
+  transform: skewX(45deg);
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+}
+.room .roomBody .teamVS{
+  font-size: 28px;
+  color: #FFC107;
+}
+.room .roomBody .teamRight{
+  width: 48%;
+  height: 35px;
+  line-height: 35px;
+  transform: skewX(45deg);
+  background: #F44336;
+  margin-right: 10%;
+  vertical-align: top;
+  border: solid 1px #015bb0;
+  float: right;
+}
+.room .roomBody .teamRight p{
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px rgba(2, 217, 253, .42);
+  background-color: rgba(2, 217, 253, .25);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(2, 217, 253, .3);
+  border-radius: 10px;
+}
+.gameRound{
+  width: 100%;
+  font-size: 18px;
+  color: #FFF;
+}
+.gameRound p {
+  margin: 0;
+  height: 48px;
+  line-height: 48px;
+  /* text-align: left;
+  padding-left: 20px; */
+}
+.gameRound p span{
+  color: #01c4f7;
+  margin: 0 5px;
+}
+.ant-progress-text{
+  color: #FFF;
+}
+.progressStyle{
+  width: 98%;
+  margin: 10px 1% 10px 0;
+}
+.teamList{
+  color: #02d9fd;
+  font-size: 16px;
+  height: 80%;
+  padding: 1em 0 1em 40px;
+}
+.teamList li{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.teamList li span{
+  text-align: center;
+  margin: 0 10px;
+}
+.teamList li i{
+  color: red;
+}
+.btnList{
+  width: 100%;
+}
+.btnList .ant-btn-lg{
+  margin: 0 10px;
+}
+.tableStyle{
+  width: 100%;
+  height: calc(100% - 15px);
+  padding: 40px;
+  color: #FFF;
+}
+.tableStyle .ant-table-thead > tr > th{
+  /* background: #1c819d; */
+  background: #003377;
+  color: #FFF;
+}
+.tableStyle .ant-table-tbody > tr > td{
+  background: #021244;
+  color: #FFF;
+}
+.tableStyle .ant-table-tbody > tr.ant-table-row:hover > td{
+  background: #23406d;
+}
+.tableStyle .ant-table-thead > tr > th{
+  border-bottom: 1px solid #3273bf;
+}
+/* background: #021448; */
+.tableStyle .ant-table-body{
+  background: #021244;
+}
+.tableStyle .ant-table-tbody > tr > td{
+  /* border-bottom: 1px solid #3273bf; */
+  border-bottom: 1px solid #0d2a65;
+}
+.tableStyle .ant-table-cell-scrollbar{
+  -webkit-box-shadow: no-repeat;
+  box-shadow: none;
+}
+.diamondDiv{
+  width: 60px;
+  height: 35px;
+  line-height: 35px;
+  transform: skewX(-35deg);
+  background: #03A9F4;
+  margin-left: 10px;
+  vertical-align: top;
+  border: solid 1px #015bb0;
+}
+.diamondDiv.first{
+  background: #FFC107;
+  border: solid 1px #FFC;
+}
+.diamondDiv.second{
+  background: #cecaca;
+  border: solid 1px #9a9090;
+}
+.diamondDiv.third{
+  background: #dc6338;
+  border: solid 1px #d6704b;
+}
+.diamondDiv p{
+  -webkit-transform: skewX(35deg);
+  transform: skewX(35deg);
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
